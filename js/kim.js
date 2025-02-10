@@ -6,7 +6,7 @@ function filterNumberMoeda(event) {
   const input = event.target;
   let value = input.value.replace(/\D/g, "");
   const numberValue = parseFloat(value) / 100;
-  input.value = numberValue;
+  input.value = numberValue.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 }
 
 function loadApp() {
