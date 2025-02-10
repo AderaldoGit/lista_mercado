@@ -47,7 +47,7 @@ function expandUP() {
 }
 
 function moeda(param) {
-  return param.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
+  return param;
 }
 
 function addLimit() {
@@ -60,7 +60,13 @@ function addName() {
 
 function confirmLimit() {
   if ($(`#limitMoney`).val() != "") {
-    updateLocalStorage("Meu Limite", parseFloat($(`#limitMoney`).val()));
+    updateLocalStorage(
+      "Meu Limite",
+      $(`#limitMoney`)
+        .val()
+        .replace(/\s|R\$|\./g, "")
+        .replace(",", ".")
+    );
     $(".msgBox").toggleClass("some");
     $(".opts").toggleClass("some");
     $(`#limitMoney`).val("");
