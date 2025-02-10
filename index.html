@@ -58,13 +58,7 @@
     </header>
     <div class="msgBox some">
       <h3>Informe o Limite!</h3>
-      <input
-        type="number"
-        inputmode="numeric"
-        id="limitMoney"
-        placeholder="R$ 0,00"
-        oninput="filterNumberMoeda(event)"
-      />
+      <input type="text" id="limitMoney" placeholder="R$ 0,00" oninput="filterNumberMoeda(event)" />
       <button onclick="confirmLimit()" class="material-symbols-outlined">check</button>
     </div>
     <div class="msgBoxName some">
@@ -75,7 +69,7 @@
     <div class="inps">
       <input type="text" placeholder="Item" id="item" maxlength="30" />
       <input type="number" inputmode="numeric" placeholder="Qtde" id="qtde" value="1" />
-      <input type="text" inputmode="numeric" placeholder="Valor" id="valor" oninput="filterNumberMoeda(event)" />
+      <input type="text" placeholder="Valor" id="valor" oninput="filterNumberMoeda(event)" />
       <button class="material-symbols-outlined" onclick="addItem()">add_circle</button>
     </div>
     <h2 id="tituloLC">

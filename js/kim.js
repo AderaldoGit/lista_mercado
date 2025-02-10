@@ -114,10 +114,10 @@ function addItem() {
   if (qtde == "" || qtde <= 0 || valor == "" || valor <= 0) {
     alert("Campos Quantidade e Valor não pode ser 0 ou Vazio!");
   } else {
-    const total = parseFloat(qtde) * parseFloat(valor);
+    const total = parseFloat(qtde) * valor.replace(/\s|R\$|\./g, "").replace(",", ".");
     itemList["Produto"] = produto;
     itemList["Qtde"] = qtde;
-    itemList["Valor"] = valor;
+    itemList["Valor"] = valor.replace(/\s|R\$|\./g, "").replace(",", ".");
     itemList["Total"] = total;
     shoppingList(itemList);
     $("#item").val("");
