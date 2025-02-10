@@ -1,0 +1,43 @@
+{
+    "Meu Limite": 0,
+    "Compra": 0,
+    "Soma": 0,
+    "Lista": [
+        {
+            "Produto": "teste ",
+            "Qtde": "15",
+            "Valor": "2",
+            "Total": 30
+        },
+        {
+            "Produto": "teste ",
+            "Qtde": "1.560",
+            "Valor": "3.58",
+            "Total": 5.5848
+        },
+        {
+            "Produto": "teste",
+            "Qtde": "1.560",
+            "Valor": "3.58",
+            "Total": 5.5848
+        },
+        {
+            "Produto": "123",
+            "Qtde": "1",
+            "Valor": "5",
+            "Total": 5
+        },
+        {
+            "Produto": "teste",
+            "Qtde": "8",
+            "Valor": "5",
+            "Total": 40
+        },
+        {
+            "Produto": "123",
+            "Qtde": "1",
+            "Valor": "5",
+            "Total": 5
+        }
+    ]
+}

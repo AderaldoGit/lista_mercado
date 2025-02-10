@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressão</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            width: 750px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            width: 750px;
+            display: flex;
+        }
+
+        ul li span {
+            width: 250px;
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        ul li span:nth-child(1) {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+
+        ul li span:nth-child(2) {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul li span:nth-child(3) {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Lista de Compras (26/01/2024)</h2>
+
+    <ul style="font-weight: bold; font-size: 18px;">
+        <li>
+            <span>Produto</span>
+            <span>Qtde x Valor</span>
+            <span>Total</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <span>maior numeros de caracteres di</span>
+            <span>1 x R$&nbsp;5,00</span>
+            <span>R$&nbsp;5,00</span>
+        </li>
+        <li>
+            <span>essas</span>
+            <span>1 x R$&nbsp;213,00</span>
+            <span>R$&nbsp;213,00</span>
+        </li>
+        <li>
+            <span>12312</span>
+            <span>1 x R$&nbsp;4,00</span>
+            <span>R$&nbsp;4,00</span>
+        </li>
+        <li>
+            <span>123</span>
+            <span>1 x R$&nbsp;5,00</span>
+            <span>R$&nbsp;5,00</span>
+        </li>
+    </ul>
+    <ul>
+        <li style="display: flex; justify-content: right; font-weight: bold; padding: 5px;">Total: R$ 580,00</li>
+        <li style="display: flex; justify-content: right; font-weight: bold; padding: 5px;">Local da Compra: Atacadão de
+            Peruíbe</li>
+    </ul>
+</body>
+
+</html>
