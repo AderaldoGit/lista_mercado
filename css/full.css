@@ -179,7 +179,7 @@ input {
 }
 
 #item {
-    width: 170px;
+    width: 190px;
     margin: 0 0 0 5px;
 }
 
@@ -188,7 +188,7 @@ input {
 }
 
 #valor {
-    width: 80px;
+    width: 60px;
 }
 
 .box {
