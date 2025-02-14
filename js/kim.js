@@ -165,7 +165,7 @@ function loadList(jsonLs) {
     ul += li;
   }
   $(".box").html(ul);
-
+  //Comentario
   if (jsonLs["Meu Limite"] != 0) {
     let change = jsonLs["Meu Limite"] - soma;
     $("#changeValue").html(moeda(change));
